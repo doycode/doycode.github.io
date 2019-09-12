@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 测试.md
+title: 测试.md文件2
 ---
 
 {{ page.title }}
