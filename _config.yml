@@ -1,2 +1,4 @@
 baseurl: /doycode.github.io
 theme: jekyll-theme-cayman
+markdown: rdiscount
+pygments: true
