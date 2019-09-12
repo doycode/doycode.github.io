@@ -16,7 +16,8 @@ html, body {
 }
 
 body {
-  background：black;
+  background：white;
+  background-image:url(../imgs/background.png);
   text-align: center;
 }
 
