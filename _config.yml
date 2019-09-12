@@ -2,4 +2,4 @@ baseurl: /doycode.github.io
 theme: jekyll-theme-cayman
 markdown: rdiscount
 pygments: true
-cover_color: blue
+cover-color: blue
