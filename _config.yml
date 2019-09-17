@@ -2,4 +2,4 @@ baseurl: /doycode.github.io
 theme: jekyll-theme-cayman
 markdown: rdiscount
 pygments: true
-header-img: imgs/background.png
+header-img: imgs/west_lake.jpg
