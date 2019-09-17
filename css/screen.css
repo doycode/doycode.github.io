@@ -90,7 +90,6 @@ ul.posts {
   font-weight: bold;
   margin-bottom: 2em;
   border-top: 4px solid #eee;
-  border-bottom: 4px solid #eee;
 }
 
   .site .title a {
@@ -114,6 +113,7 @@ ul.posts {
 
   .site .meta {
     color: #aaa;
+	border-top: 4px solid #eee;
   }
 
   .site .footer {
