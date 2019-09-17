@@ -4,9 +4,16 @@ title: 董云成的个人网站
 ---
 
 <div id="主页">
-  <h1>博文列表</h1>
+  <h1>开发相关</h1>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in site.posts.develop %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  
+  <h1>生活杂感</h1>
+  <ul class="posts">
+    {% for post in site.posts.life %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
