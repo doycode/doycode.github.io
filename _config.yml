@@ -1,5 +1,5 @@
 baseurl: /doycode.github.io
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
 markdown: rdiscount
 pygments: true
 header-img: imgs/background.jpg
