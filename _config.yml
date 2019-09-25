@@ -62,9 +62,6 @@ plugins:
     # extensions: [ "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
     
     
-# markdown: kramdown
-# highlighter: rouge
-
-# kramdown:
-    # input: GFM
-    # syntax_highlighter: syntax_highlighter_opts
+markdown: kramdown
+kramdown:
+    input: GFM
