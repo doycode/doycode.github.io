@@ -19,8 +19,7 @@ pre {
 code {
     @include fontsize(eta, all);
     line-height: 1.2rem;
-  }
-  
+  } 
 
 * {
   margin: 0;
@@ -32,8 +31,9 @@ html, body {
 }
 
 body {
-  background：white;
-  background-image:url(/imgs/background.jpg);
+  /*background：white;*/
+  background-color: #eeeeee;
+  /*background-image:url(/imgs/background.jpg);*/
   text-align: center;
 }
 
