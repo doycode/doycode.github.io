@@ -6,6 +6,22 @@
 
 /* Global Reset */
 
+pre {
+    font-family:unquote(map-get($monospacetype, font-family));
+    background:  $codeBackgroundColour;
+    line-height: 1.2rem;
+    white-space: pre;
+    overflow-x: auto;
+    overflow-y: hidden;
+    word-break: inherit;
+    word-wrap: inherit;
+  }
+code {
+    @include fontsize(eta, all);
+    line-height: 1.2rem;
+  }
+  
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +33,7 @@ html, body {
 
 body {
   background：white;
-  background-image:url(../imgs/background.jpg);
+  background-image:url(/imgs/background.jpg);
   text-align: center;
 }
 
