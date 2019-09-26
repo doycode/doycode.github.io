@@ -6,7 +6,7 @@
 
 /* Global Reset */
 
-pre {
+/* pre {
     font-family:unquote(map-get($monospacetype, font-family));
     background:  $codeBackgroundColour;
     line-height: 1.2rem;
@@ -19,7 +19,7 @@ pre {
 code {
     @include fontsize(eta, all);
     line-height: 1.2rem;
-  } 
+  } */ 
 
 * {
   margin: 0;
@@ -160,8 +160,18 @@ ul.posts {
 
   #post pre {
     border: 1px solid #ddd;
-    background-color: #eef;
+    background-color: #eef;/*代码块背景颜色*/
+	/*background-color: #000;*/
     padding: 0 .4em;
+	overflow-x: auto;
+    overflow-y: hidden;
+	
+	border-radius:.8rem .8rem .8rem .8rem;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+    font-size:1.4rem;
+	font-family: monospace, "Microsoft Yahei";
+    line-height:1.5rem;
+    color:#000;
   }
 
   #post ul,
@@ -170,8 +180,9 @@ ul.posts {
   }
 
   #post code {
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     background-color: #eef;
+	/*background-color: #000;*/
     font-size: 85%;
     padding: 0 .2em;
   }

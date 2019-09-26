@@ -56,12 +56,13 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# highlighter: rouge
+#highlighter: rouge
 # markdown: redcarpet
 # redcarpet:
     # extensions: [ "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
     
     
-markdown: kramdown
-kramdown:
-    input: GFM
+# markdown: kramdown
+# kramdown:
+    # input: GFM
+#    syntax_highlighter: rouge
