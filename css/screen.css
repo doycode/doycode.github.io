@@ -152,7 +152,7 @@ ul.posts {
     box-shadow:0 0 15px rgba(0,0,0,.3);
     font-size:1.4rem;
 	/*font-family: "Microsoft Yahei", monospace;*/
-	font-family: "\5FAE\8F6F\96C5\9ED1", monospace;
+	font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", "微软雅黑", monospace;
     line-height:1.5rem;
     color:#000;
   }
