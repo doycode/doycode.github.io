@@ -29,8 +29,6 @@ baseurl: /doycode.github.io # the subpath of your site, e.g. /blog
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
-#language: zh-CN
-
 # Build settings
 #theme: minima
 plugins:
@@ -55,14 +53,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-#highlighter: rouge
-# markdown: redcarpet
-# redcarpet:
-    # extensions: [ "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
-    
-    
-# markdown: kramdown
-# kramdown:
-    # input: GFM
-#    syntax_highlighter: rouge
