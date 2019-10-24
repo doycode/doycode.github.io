@@ -1,59 +1,300 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body, h1, h2, h3, h4, h5, h6, p, a, table{
-	font-family: "Microsoft Yahei", monospace, "Courier New", Monaco;
-}
-
-html, body {
-  height: 100%;
-}
-
+/**
+ * =Body
+ ***************************/
 body {
-  /*background：white;*/
-  background-color: #eeeeee;
-  /*background-image:url(/imgs/background.jpg);*/
+  font: normal 18px "Avenir Next", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #4c4c4c;
+  background-color: #f5f5f5;
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+img {
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/**
+ * =Layout
+ ***************************/
+#box {
+  margin: 20px auto;
+  text-align: left;
+  max-width: 650px;
+}
+
+html>body #box {
+  max-width: 650px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+}
+
+#content {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: 20px 20px;
+  line-height: 26px;
+}
+
+#footer {
+  width: 600px;
+  clear: both;
+  height: 21px;
+  min-height: 21px;
+}
+
+#footer_text {
+  padding-top: 6px;
+  font-size: 14px;
+}
+
+#tags, #authors, #search_results {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+/**
+ * =Posts and comments
+ ***************************/
+.item_tags {
+    clear: both;
+    font-size: 11px;
+}
+
+  /*文字与图标对齐*/
+.icon { 
+    display: inline-block; 
+    width:20px; height:20px; 
+    white-space:nowrap; 
+    letter-spacing: -1em; 
+    text-indent: -99em; 
+    color: transparent;
+	vertical-align: middle;
+    /* IE7 */
+    *text-indent: 0;
+    *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\3000');
+}
+.icon:before { 
+    content: '\3000'; 
+}
+
+.othericon {
+	margin-left: 1em;
+	display: inline-block; 
+    width:20px; height:20px; 
+    white-space:nowrap; 
+    letter-spacing: -1em; 
+    text-indent: -99em; 
+    color: transparent;
+	vertical-align: middle;
+    /* IE7 */
+    *text-indent: 0;
+    *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\3000');
+}
+
+.myplane {
+	margin-left: 15em;
+	width:156px; height:71px;
+	vertical-align: middle;
+}
+
+.pro {
+	width:250px; height:157px;
+}
+
+/**
+ * =Headers
+ ***************************/
+#head {
+  margin: 0px;
+  height: 130px;
+  min-height: 130px;
+  width: 100%;
+  background-color: #2B7598;
+  /*background-color: #03a3d2;*/
+  text-align: left;
+  /*background-image: url(/images/cloud.png);*/
+}
+
+#header-content {
+  width: 650px;
+  margin: 0px auto;
+}
+
+#header-content #paperplane {
+  transform: rotate(0deg) scale(0.1);
+  -webkit-transform: rotate(0deg) scale(0.1);
+  -moz-transform: rotate(0deg) scale(0.1);
+  float: right;
+  margin-top: -30px;
+}
+
+#head #about {
+  width: 590px;
+  /*margin: 0px auto;*/ 
+  padding-top: 30px;
+  margin-left: -1.4em;
+}
+
+#footer-about {
+  width: 666px; 
+  padding-top: 40px;
+  margin-left: 0em;
+}
+
+#head #about .about-sub-title {
+  font-size: 17px;
+}
+
+#head h1 {
+  color: white;
+  font-size: 24px;
+}
+
+#head p {
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#head a, #head a:hover, #head a:active, #head a:visited {
+  color: white;
+  /*text-decoration: underline;*/
+}
+
+#articles article {
+  margin-bottom: 20px;
+}
+
+#articles article:only-child {
+  margin-bottom: 0px;
+}
+
+#articles article:last-child {
+  margin-bottom: 0px;
 }
 
 h1 {
-  margin-bottom: 1em;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  margin-left: 0em;
+  color: #2B7598;
+}
+h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+	margin-top: 1em;
+}
+h2 {
+  font-size: 20px;
+  padding-top: 2px;
+  color: #2B7598;
+  font-weight: normal;
+}
+h3 {
+    font-size: 22px;
+    padding-bottom: 3px;
+    font-weight: normal;
+}
+h4, .item_meta {
+    font-size: 12px;
+    color: #777;
+    font-weight: normal;
+}
+.item_meta {
+    padding-bottom: 20px;
 }
 
-p {
-  margin: 1em 0;
-}
-
+/**
+ * =Links
+ ***************************/
 a {
-  color: #00a;
+  color: #2B7598;
+  text-decoration: none;
 }
-
 a:hover {
-  color: black;
+  color: #000;
+  text-decoration: underline;
 }
 
-a:visited {
-  color: #a0a;
+h1 a, h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+h1 a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
-table {
-  font-size: inherit;
-  font: 100%;
+/**
+ * =Misc
+ ***************************/
+br {
+  clear: both;
 }
+code {
+  font-family: Monaco, 'Courier New', Courier;
+  font-size: 15px;
+  color: #000;
+}
+
+a > code {
+  color: #2B7598;
+}
+
+blockquote {
+  color: #000;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+ul {
+  margin: 0em 0em 0em 0em;
+  padding-left: 1.5em;
+}
+
+li {
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-top: 0.5em;
+}
+
+.pagination {
+  padding-bottom: 40px;
+  font-size: 15px;
+}
+.next {
+  float: right;
+}
+
+.previous {
+  float: left;
+}
+
+#archives h3 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#archives .archive-year {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 
 /*****************************************************************************/
 /*
@@ -64,10 +305,11 @@ table {
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
+  margin-top: 1em; /*开发相关和下面文章列表的间隔*/
 }
 
   ul.posts li {
-    line-height: 1.75em;
+    line-height: 1.2em;
   }
 
   ul.posts span {
@@ -75,58 +317,6 @@ ul.posts {
     font-family: "Microsoft Yahei", monospace, "Courier New", Monaco;
     font-size: 80%;
   }
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 110%;
-  text-align: justify;
-  width: 40em;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
-}
-
-.title {
-  color: #a00;
-  font-weight: bold;
-  margin-bottom: 2em;
-}
-
-  .site .title a {
-    color: #a00;
-    text-decoration: none;
-  }
-
-  .site .title a:hover {
-    color: black;
-  }
-
-  .site .title a.extra {
-    color: #aaa;
-    text-decoration: none;
-    margin-left: 1em;
-  }
-
-  .site .title a.extra:hover {
-    color: black;
-  }
-
-  .site .meta {
-    color: #aaa;
-  }
-
-  .site .footer {
-    font-size: 80%;
-    color: #666;
-	border-top: 4px solid #ddd;
-    margin-top: 2em;
-    overflow: hidden;
-  }
-
 
 /*****************************************************************************/
 /*
