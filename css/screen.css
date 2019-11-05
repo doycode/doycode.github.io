@@ -247,7 +247,7 @@ br {
   clear: both;
 }
 code {
-  font-family: Monaco, 'Courier New', Courier;
+  font-family: "Microsoft Yahei", Monaco, 'Courier New', Courier;
   font-size: 15px;
   color: #000;
 }
@@ -341,7 +341,7 @@ ul.posts {
 	border-radius:.8rem .8rem .8rem .8rem;
     box-shadow:0 0 15px rgba(0,0,0,.3);
     font-size:1.3rem;
-	font-family: "Microsoft Yahei", monospace;
+	font-family: "Courier New", Monaco, "Microsoft Yahei", monospace;
 	/*font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", "微软雅黑", monospace;*/
     line-height:1.5rem;
     color:#000;
