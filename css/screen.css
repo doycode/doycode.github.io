@@ -111,6 +111,12 @@ html>body #box {
 	width:250px; height:157px;
 }
 
+.meta {
+	color: #aaa;
+	font-family: "Microsoft Yahei";
+	font-size: 80%;
+}
+
 /**
  * =Headers
  ***************************/
