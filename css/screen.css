@@ -101,8 +101,9 @@ html>body #box {
     *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\3000');
 }
 
-.myplane {
-	margin-left: 15em;
+.mycloud {
+	margin-left: -20em;
+	margin-right: 0em;
 	width:156px; height:71px;
 	vertical-align: middle;
 }
@@ -128,7 +129,7 @@ html>body #box {
   background-color: #2B7598;
   /*background-color: #03a3d2;*/
   text-align: left;
-  /*background-image: url(/images/cloud.png);*/
+  /*background-image: url(/images/background.jpg);*/
 }
 
 #header-content {
@@ -203,7 +204,7 @@ h2, h3, h4 {
 	margin-top: 1em;
 }
 h2 {
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 2px;
   color: #2B7598;
   font-weight: normal;
