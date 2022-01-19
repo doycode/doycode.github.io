@@ -1,55 +1,85 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Basic
+title: 北岛向南的老店
+subtitle: 愛してる
+description: 为你，千千万万遍。
+# 头像里面的标题
+avatarTitle: Javef
+# 头像里面的描述
+avatarDesc: 2018 · 期待
+url: "http://javef.github.io"
 
-#title: Your awesome title
-#email: your-email@example.com
-#description: >- # this means to ignore newlines until "baseurl:"
-#  Write an awesome description for your new site here. You can edit this
-#  line in _config.yml. It will appear in your document head meta (for
-#  Google search results) and in your feed.xml site description.
-baseurl: /doycode.github.io # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
+# Comment
+comment:
+    #友言，jiaThis旗下的，由于时http请求，github pages现在都是https了， 在https站点无法调用http请求，故也无法使用
+    # 友言id,登录友言官网申请
+    #uyan: 2154872
+    
+    #disqus，国外比较火的评论系统，但在国内墙了
+    # disqus用户名,登录http://disqus.com/官网申请(不过貌似这个目前国内又用不了了)
+    #disqus: Javef
+    
+    # Support for LiveRe comments system.
+    # You can get your uid from https://livere.com/insight/myCode (General web site)
+    livere_uid: MTAyMC80MzQ5OS8yMDAzOQ==    #韩国一款软件，来必力
 
-# Build settings
-#theme: minima
-plugins:
-  - jekyll-feed
+# Social
+social:
+    weibo: 5736541528 
+    github: javef
+    # twitter: 
+    gplus: 110700564157953759206    #Google+ 的id号
+    mail: nanzhouie@gmail.com
+    flickr: nanzhouie
+    paypal: zhouie
+    music: 426481614    # Netease Cloud Music网易云音乐的ID
+    
+# 百度统计 
+# 使用博客模板请去掉或者更换 id 
+baidu:
+    id: false
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
+# Google Analytics
+# 使用博客模板请去掉或者更换 id
+ga:
+    id: false
+    host: auto  
+    ad_id: false
+
+
+# 《----------------- 上面的信息修改成你自己的 ---------------------------》
 #
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+#  _post/ 下的文章更换成你自己的文章
+#
+#
+# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
+
+
+permalink: /:year/:month/:title/
+# Format
+highlighter: rouge
+
+textColor: #FF0000
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: 博客主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}
+    - {title: 项目, description: project, url: '/project'}      
+    - {title: 关于我, description: about, url: '/about'}
+          
+    
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+

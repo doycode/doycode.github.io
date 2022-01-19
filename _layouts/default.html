@@ -1,55 +1,40 @@
 <!DOCTYPE html>
-<!--html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cmn-Hans"-->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
+<html>
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+  {% include head.html %}
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+  <body>
 
-   <!-- Typekit -->
-   <script type="text/javascript" src="https://use.typekit.com/jpd0pfm.js"></script>
-   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-</head>
+    <span class="mobile btn-mobile-menu">        
+      <div class="nav_container">
+         <nav class="nav-menu-item" style = "float:right">
+            <i class="nav-menu-item">
+              <a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">  {{site.blog_button.title}}
+              </a>
+            </i>
+            {% for item in site.nav %}
+                <i class="nav-menu-item">
 
-<body>
-    <div id="head">
-
-      <div id="header-content">
-	  	<!--a href="/">
-          <img src="/images/paperplane.jpg" id="paperplane">
-        </a-->
-        <div id="about">
-		  <img src="/icons/主页.png" class="icon">
-          <span><a href="/">主页</a></span>
-		  <img src="/icons/关于.png" class="othericon">
-		  <span><a class="" href="/about.html">关于</a></span>
-		  <img src="/images/cloud.png" class="mycloud">
-        </div>
-
+                  <a href="{{item.url}}" title="{{item.description}}" class="btn-mobile-menu__icon">
+                      {{item.title}}
+                  </a>
+                </i>
+            {% endfor %}
+          </nav>
       </div>
+    </span>
+    
+    {% include side-panel.html %}
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            {{ content }}
+            {% include footer.html %}
+        </div>
     </div>
+    
+    {% include external.html %}
+    
+  </body>
 
-    <div id="box">
-      {{ content }}
-	</div>
-  
-    <div id="head">
-	<div id="header-content">
-	<div id="footer-about">
-      <font size=2><p style="color: white">妙言至径，大道至简。譬如造化之于万物，非能大巧，使其青黄赤白，一一之相类乎。是禀性合真，自然之理也。</p></font>
-	  <font size=2><p style="color: white" align="right">---- 五代 . 陶埴 . 还金述中篇</p></font>
-    </div>
-	</div>
-    </div>
-  
-
-<a href="https://github.com/doycode"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-
-
-</body>
 </html>
