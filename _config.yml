@@ -18,13 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 黄金时代
-subtitle: 王小波
+title: 至简
+subtitle: Be simple
 email: dongyuncheng1991@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，
-  
-  还想在一瞬间变成天上半明半暗的云。
+description: 简单是一种美德
 # 头像里面的标题
 avatarTitle: 你好哇
 # 头像里面的描述
@@ -95,14 +92,14 @@ cover_color: clear
 
 # The blog button should not be removed.
 blog_button:
-    title: 博客主页
+    title: 主页
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 文章, description: archive, url: '/archive'}   
     - {title: 标签, description: tags, url: '/tags'}
     - {title: 项目, description: project, url: '/project'}      
-    - {title: 关于我, description: about, url: '/about'}
+    - {title: 关于, description: about, url: '/about'}
           
     
 
