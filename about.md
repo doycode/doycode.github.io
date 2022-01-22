@@ -15,7 +15,7 @@ title:
 <p>
 &nbsp;🔹邮箱：dongyuncheng1991@gmail.com<br>
 
-&nbsp;🔹微信：<a href="/project/albums/me.jpg"> 董云成</a> (ID: dongyuncheng1991)<br>
+&nbsp;🔹微信：<a href="/project/albums/me.jpg">董云成</a> (ID: dongyuncheng1991)<br>
 
 &nbsp;🔹网易云音乐：<a href="https://music.163.com/#/user/home?id=1319780563">董云成</a>
 

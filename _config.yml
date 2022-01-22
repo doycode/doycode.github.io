@@ -21,7 +21,7 @@
 title: 至简
 subtitle: Be simple
 email: dongyuncheng1991@gmail.com
-description: 简单是一种美德
+description: 为了寻找你，我把自己搬进鸟的眼睛，经常盯着路过的风。
 # 头像里面的标题
 avatarTitle: 你好哇
 # 头像里面的描述
@@ -63,15 +63,15 @@ social:
     
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
-#baidu:
-#    id: false
+baidu:
+   id: false
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
-#ga:
-#    id: false
-#    host: auto  
-#    ad_id: false
+ga:
+   id: false
+   host: auto  
+   ad_id: false
     
 # 《----------------- 上面的信息修改成你自己的 ---------------------------》
 #
