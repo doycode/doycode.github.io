@@ -7,9 +7,9 @@ title:
 <h3>🎓<strong>关于我</strong></h3>
 
 
-&nbsp;
+&nbsp;🔹个人简历：请点击<a href="/images/resume.png">这里</a>
 
-<img src="/images/resume.png"/>
+<!--img src="/images/resume.png"/-->
 
 <br>
 
