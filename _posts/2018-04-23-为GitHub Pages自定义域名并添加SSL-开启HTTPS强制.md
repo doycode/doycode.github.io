@@ -3,7 +3,7 @@ layout: post
 title: "为GitHub Pages自定义域名并添加SSL-开启https强制"
 date: 2018-04-23
 description: "为GitHub Pages自定义域名、借助Cloudflare添加免费SSL、并开启https强制"
-tag: SSL
+tag: 工具
 ---  
 
 <br>
