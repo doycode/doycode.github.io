@@ -52,62 +52,7 @@ tag: 工具
 3. 在CloudFlare的`Crypto`设置SSL为`Flexible`(等待一定时间实现建立连接后，就可以通过`https`来访问自己的 GithubPage )。
 4. 在CloudFlare的`Page Rules`中设置路由规则。一般情况下，利用`Always use https`设置两条规则，规则链接分别为`http://域名/*` 与`http://域名/`(开启https强制跳转)。
 
-还有其他的一些，例如Cloudflare还提供免费的`CDN`和`缓存技术`，让浏览者有更好的体验~~
-
-### 详细步骤
-
-* 创建CloudFlare帐户，并添加网站
-
-首先你已经有自己的`自定义域名`的GitHub Pages ，比如你的 GitHub Pages CNAME文件写的是 `xxx.cn`
-
-> 明确一下我们的实现目标： 当访客输入`xxx.cn` 强制跳转使用https，访问`wwww.xxx.cn` 也会跳转到`https://www.xxx.cn`
-
-如果你还没有Cloudflare账号，[点击注册](https://www.cloudflare.com/a/sign-up)
-
-* 登陆后，[点击这里](https://www.cloudflare.com/a/add-site) 增加你的域名，如下图，输入你的域名，例如 `xxx.cn` 并点击`Begin Scan`
-
-![](https://dha4w82d62smt.cloudfront.net/items/1p3D360D0G3y1z1C363y/Image%202018-04-23%20at%206.45.37%20PM.png)
-
-> 注意不要写`WWW`前缀，大约60秒即可完成域名解析扫描。完成后点击`Continue Setup` 继续下一步
-
-* 你看到`DNS记录（包括子域）列表`之后，按照下图提示设置后，其中`cname`是为了重定向`www`备的，点击`Continue`下一步
-
-![](https://dha4w82d62smt.cloudfront.net/items/3l0J1B3N3z2U142b1I0v/Image%202018-04-23%20at%206.54.04%20PM.png)
-
-* 选择免费计划，然后下一步~
-
-![](https://dha4w82d62smt.cloudfront.net/items/3k0s2u3h1E3Y2W0M2J0o/Image%202018-04-23%20at%206.55.56%20PM.png)
-
-> 到你域名控制面板修改`cloudflare`给出的域名服务器，我这里以`阿里云`为例
-
-* 在`域名管理台`点击`管理`
-
-![](https://dha4w82d62smt.cloudfront.net/items/2d1w3U2z2U3R2q0Q2N1R/Image%202018-04-23%20at%207.02.00%20PM.png)
-
-![](https://dha4w82d62smt.cloudfront.net/items/2u3o1Q3z383R0O0Z2F14/Image%202018-04-23%20at%207.11.28%20PM.png)
-
-> 注：虽然官方说明，域名服务器修改最长需要72小时生效，但我用域名做了自己测试，大约只需要 5~10 分钟，看到 **Status: Active** 即可
-
-![](https://dha4w82d62smt.cloudfront.net/items/1t3O2b3t2Y2K2g1M303h/Image%202018-04-23%20at%207.17.33%20PM.png)
-
-* 设置SSL
-点击 `crypto `菜单 , 然后设置`Flexible SSL` ，如下图
-
-![](https://dha4w82d62smt.cloudfront.net/items/3E1j3m3a1X3i362v431x/Image%202018-04-23%20at%207.19.14%20PM.png)
-
-* 添加www重定向到https://yicodes.com
-
-![](https://dha4w82d62smt.cloudfront.net/items/0o1p3o0t0G2Y0N2h2B3x/Image%202018-04-23%20at%207.23.29%20PM.png)
-
-* 添加自动重定向到 SSL页面
-
-![](https://dha4w82d62smt.cloudfront.net/items/2d2V021G3V2J3i2a201I/Image%202018-04-23%20at%207.26.11%20PM.png)
-
-* 添加SSL的教程就此完成，一般需要5~30分钟生效！
-![](https://dha4w82d62smt.cloudfront.net/items/3C1w0i0V2A0U241k0n0u/Screen%20Recording%202018-04-23%20at%2007.37.38.99%20PM.gif)
-
-
-![](https://dha4w82d62smt.cloudfront.net/items/1v1B1F0h3f371Y3W1G3Q/Image%202018-04-23%20at%208.23.01%20PM.png)
+还有其他的一些，例如Cloudflare还提供免费的`CDN`和`缓存技术`，让浏览者有更好的体验。
 
 
 ---

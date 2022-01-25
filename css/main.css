@@ -1433,7 +1433,7 @@ nav a {
 /*下面这段是实现：
   当鼠标放在图片上方时
   添加图片抖动效果*/
-
+/*
 img:hover {
 -webkit-animation:sucaijiayuan 1s .1s ease both;
 -moz-animation:tada 0.4s .1s ease both;
@@ -1454,6 +1454,7 @@ img:hover {
 100% {
 -webkit-transform:scale(1) rotate(0)
 }
+*/
 
 /*下面这段是实现：
   当鼠标放在图片上方时
