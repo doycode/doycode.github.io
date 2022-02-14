@@ -32,7 +32,7 @@ url: "https://doycode.github.io/" # the base hostname & protocol for your site, 
 github_username:  doycode
 
 # Comment
-comment:
+#comment:
     #友言，jiaThis旗下的，由于时http请求，github pages现在都是https了， 在https站点无法调用http请求，故也无法使用
     # 友言id,登录友言官网申请
     #uyan: 2154872
@@ -49,6 +49,11 @@ comment:
 theme: minima
 plugins:
   - jekyll-feed
+  
+# Comment
+comment:
+    disqus: vno-jekyll
+    # duoshuo:
   
 # Social
 social:
