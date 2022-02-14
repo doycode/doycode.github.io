@@ -51,8 +51,8 @@ plugins:
   - jekyll-feed
   
 # Comment
-comment:
-    disqus: vno-jekyll
+#comment:
+#    disqus: 
     # duoshuo:
   
 # Social
