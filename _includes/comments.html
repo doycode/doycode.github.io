@@ -33,6 +33,25 @@
     </script>
   {% endif %}
   
+  <!--使用gitalk来当做文章的评论部分-->
+	  <div id="gitalk-container"></div>
+	   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+	   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+	   <script src="/js/md5.min.js"></script>
+	  <script>
+		   var gitalk = new Gitalk({
+			  clientID: '6935d23d9fdf60b81c39',
+			  clientSecret: '0e283e3bcfcd7d591adc3f179082a3b64413f69e',
+			  repo: 'doycode.github.io',
+			  owner: 'doycode',
+			  admin: ['doycode'],
+			  id:  md5(location.href),      // Ensure uniqueness and length less than 50
+			  distractionFreeMode: true  // Facebook-like distraction free mode
+			})
+
+			gitalk.render('gitalk-container')
+		</script>
+  
   
   
 </section>
