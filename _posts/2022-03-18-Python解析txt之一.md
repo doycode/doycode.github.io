@@ -71,9 +71,5 @@ if __name__ == '__main__':
     plot_dict("侧面训练样本类别分布", side_cls_dict)
 ```
 
-测试数据请点击：
-<br>
-<a href="/downloads/DetectTrainData_Bottom.txt" target="_blank">DetectTrainData_Bottom.txt</a>
-<br>
-<a href="/downloads/DetectTrainData_Side.txt" target="_blank">DetectTrainData_Side.txt</a>
+代码中的两个测试数据请点击：<a href="/downloads/DetectTrainData.7z" target="_blank">DetectTrainData.7z</a>
 <br><br>
