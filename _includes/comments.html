@@ -31,10 +31,24 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
     </script>
+	
+	{% elsif site.comment.valine %}
+	
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+	<script>
+    new Valine({
+        el: '#comments',
+        app_id: '{{ site.valine.leancloud_appid }}',   //这里变量的取值在网站配置文件里_config.yml
+        app_key: '{{ site.valine.leancloud_appkey }}', //这里变量的取值在网站配置文件里_config.yml
+        placeholder:'{{ site.valine.placeholder }}'    //这里变量的取值在网站配置文件里_config.yml
+    });</script>
+	
+	
   {% endif %}
   
   <!--使用gitalk来当做文章的评论部分-->
-	  <div id="gitalk-container"></div>
+	  <!--div id="gitalk-container"></div>
 	   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 	   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 	   <script src="/js/md5.min.js"></script>
@@ -50,7 +64,9 @@
 			})
 
 			gitalk.render('gitalk-container')
-		</script>
+		</script-->
+		
+		
   
   
   

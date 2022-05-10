@@ -51,7 +51,16 @@ plugins:
   - jekyll-feed
   
 # Comment
-#comment:
+comment:
+    valine:
+        enable: true
+        # app_id
+        leancloud_appid: ATfCB3p2vdFv8XTwLGR7Srly-gzGzoHsz
+        # app_key
+        leancloud_appkey: A0SCAc1DUAgmhtfYtDze8fQ0
+        # placeholder
+        placeholder: “Just go go"
+    
 #    disqus: 
     # duoshuo:
   
