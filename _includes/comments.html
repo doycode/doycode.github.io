@@ -49,13 +49,13 @@
   
   
   <div id="valine-container"></div>
-	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+	<script src="/js/av-min.js"></script>
+	<script src='/js/Valine.min.js'></script>
 	<script>
     var v = new Valine({
         el: '#comments',
-        app_id: 'ATfCB3p2vdFv8XTwLGR7Srly-gzGzoHsz',   //这里变量的取值在网站配置文件里_config.yml
-        app_key: 'A0SCAc1DUAgmhtfYtDze8fQ0', //这里变量的取值在网站配置文件里_config.yml
+        appId: 'ATfCB3p2vdFv8XTwLGR7Srly-gzGzoHsz',   //这里变量的取值在网站配置文件里_config.yml
+        appKey: 'A0SCAc1DUAgmhtfYtDze8fQ0', //这里变量的取值在网站配置文件里_config.yml
         placeholder:''    //这里变量的取值在网站配置文件里_config.yml
     })
 	v.render('valine-container')
