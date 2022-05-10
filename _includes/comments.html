@@ -33,7 +33,7 @@
     </script>
 	
 	{% elsif site.comment.valine.enable %}
-	<div id="valine-container"></div>
+	<!--div id="valine-container"></div>
 	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 	<script>
@@ -42,10 +42,25 @@
         app_id: '{{ site.comment.valine.leancloud_appid }}',   //这里变量的取值在网站配置文件里_config.yml
         app_key: '{{ site.comment.valine.leancloud_appkey }}', //这里变量的取值在网站配置文件里_config.yml
         placeholder:'{{ site.comment.valine.placeholder }}'    //这里变量的取值在网站配置文件里_config.yml
-    });</script>
+    });</script-->
 	
 	
   {% endif %}
+  
+  
+  <div id="valine-container"></div>
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+	<script>
+    var v = new Valine({
+        el: '#comments',
+        app_id: 'ATfCB3p2vdFv8XTwLGR7Srly-gzGzoHsz',   //这里变量的取值在网站配置文件里_config.yml
+        app_key: 'A0SCAc1DUAgmhtfYtDze8fQ0', //这里变量的取值在网站配置文件里_config.yml
+        placeholder:''    //这里变量的取值在网站配置文件里_config.yml
+    })
+	v.render('valine-container')
+	</script>
+  
   
   <!--使用gitalk来当做文章的评论部分-->
 	  <!--div id="gitalk-container"></div>
