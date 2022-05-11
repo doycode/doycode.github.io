@@ -175,7 +175,8 @@ blockquote p:last-child {
   margin-bottom: 0; }
 
 ol, ul {
-  margin: 0 0 1.3em 2.5em; }
+  border-top: 1px solid #DDDDDD;
+  margin: 0 0 3.5em 0; }
 ol li, ul li {
   margin: 0 0 .2em 0;
   line-height: 1.6em; }
@@ -405,7 +406,7 @@ img::-moz-selection {
 
   .footer {
     display: block;
-    padding: 2em 0 0 0;
+    padding: 0.em 0 0 0;
     border-top: 1px solid #DDDDDD;
     font-size: .7em;
     color: #b3b3b3; }
