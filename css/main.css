@@ -175,8 +175,12 @@ blockquote p:last-child {
   margin-bottom: 0; }
 
 ol, ul {
+  margin: 0 0 1.3em 2.5em; }
+/*ul {
   border-top: 1px solid #DDDDDD;
   margin: 0 0 3.5em 0; }
+ol {
+  margin: 0 0 1.3em 2.5em; }*/
 ol li, ul li {
   margin: 0 0 .2em 0;
   line-height: 1.6em; }
@@ -254,21 +258,40 @@ td:last-child {
 
 /*pager start----------------*/
 .post-container 
+/*.pager li{ 
+  margin-top: 20px;
+  width:48%
+}*/
 .pager li{ 
+  /*margin: 0 0 1.3em 2.5em;*/
   margin-top: 20px;
   width:48%
 }
-.next{
+/*.next{
   margin-top: 20px;
   float:right
 }
 .previous{
   margin-top: 20px;
   float:left
+}*/
+
+.next{
+  /*border: 1px solid #363636;*/
+  background-color:#B9D3EE;
+  margin-top: 0px;
+  float:right
 }
+.previous{
+  /*border: 1px solid #363636;*/
+  background-color:#B9D3EE;
+  margin-top: 0px;
+  float:left
+}
+
 .pager li>a{
   width:100%;
-  padding: 10px 10px;  
+  padding: 0px 0px;  
 }
 
 .pager li>a>span{
@@ -443,7 +466,7 @@ img::-moz-selection {
     display: none !important; }
 
   .post-comments {
-    border-top: 1px solid #DDDDDD;
+    /*border-top: 1px solid #DDDDDD;*/
     padding: 60px 0; }
 
   .post-meta {
