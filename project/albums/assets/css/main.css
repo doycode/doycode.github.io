@@ -2100,7 +2100,8 @@
 
 	#header {
 		position: relative;
-		background-image: url("https://i.loli.net/2019/03/12/5c8732a9de31b.jpg");
+		/*background-image: url("https://i.loli.net/2019/03/12/5c8732a9de31b.jpg");*/
+		background-image: url("/images/SnowMountain.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2181,6 +2182,7 @@
 
 		body.homepage #header:after {
 			content: '';
+			/*background: #1C0920;*/
 			background: #1C0920;
 			display: block;
 			position: absolute;
@@ -2192,7 +2194,7 @@
 			-moz-transition: opacity 2.5s ease-in-out;
 			-webkit-transition: opacity 2.5s ease-in-out;
 			-ms-transition: opacity 2.5s ease-in-out;
-			transition: opacity 2.5s ease-in-out;
+			transition: opacity 1.5s ease-in-out;
 			-moz-transition-delay: 0.5s;
 			-webkit-transition-delay: 0.5s;
 			-ms-transition-delay: 0.5s;
