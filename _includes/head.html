@@ -18,8 +18,8 @@
   <link href="/images/favicon.png" rel="shortcut icon" type="image/png">
   
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <!--link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"-->
-  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--link href="/css/font-awesome.min.css" rel="stylesheet"-->
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
@@ -31,6 +31,7 @@
   </script-->  
 
 <!-- Baidu tongji analytics 百度统计-->
+<!-->
 {% if site.baidu.id %}
   <script>
     var _hmt = _hmt || [];
@@ -42,9 +43,10 @@
     })();
   </script>
 {% endif %}
-
+<-->
 
 <!-- Global site tag (gtag.js) - Google Analytics google 统计-->
+<!-->
 {% if site.ga.id %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga.id}}"></script>
     <script>
@@ -55,8 +57,10 @@
       gtag('config', '{{site.ga.id}}');
     </script>
 {% endif %}
+<-->
 
 <!-- google Adsense -->
+<!-->
 {% if site.ga.ad_id %}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -66,5 +70,6 @@
       });
     </script>
  {% endif %}
+ <-->
 
 </head>
