@@ -5,6 +5,7 @@
 var imgArr=[
     "images/background-cover-1.jpg",
     "images/background-cover-2.jpg",
+	"images/background-cover-3.jpg",
 	"images/SnowMountain.jpg"
 ]; 
  
