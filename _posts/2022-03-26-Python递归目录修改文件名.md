@@ -10,6 +10,8 @@ tag: Python
 
 ### 代码
 
+纯记录，以备日后查看。
+
 ```python
 # -*- coding: utf-8 -*-
 """
