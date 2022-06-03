@@ -23,6 +23,8 @@ var imgArr=[
 	"images/background-cover-18.jpg",
 	"images/background-cover-19.jpg",
 	"images/background-cover-20.jpg",
+	"images/background-cover-21.jpg",
+	"images/background-cover-22.jpg",
 	"images/SnowMountain.jpg"
 ]; 
  
