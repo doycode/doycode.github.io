@@ -122,7 +122,8 @@ paginate: 10
 paginate_path: "page/:num/"    
 
 markdown: kramdown
-
+kramdown:
+  math_engine: katex
 
 # Exclude from processing.
 # The following items will not be processed, by default.
