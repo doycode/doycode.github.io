@@ -1,0 +1,19 @@
+---
+layout: post	
+title: "BP神经网络权重更新及推导"	
+date: 2022-08-08	
+description: "算法推导"	
+tag: 算法
+katex: True	
+---
+
+---
+### 结论
+假如`BP`神经网络有三层，即输入层、隐藏层和输出层，那么隐藏层到输出层的权重更新公式为：
+\$$
+\boldsymbol{w_{ho}}= \boldsymbol{w_{ho}}-\eta \frac{\partial \boldsymbol{L}}{\partial \boldsymbol{w_{ho}}}
+\$$
+
+
+<br>
+<br>
